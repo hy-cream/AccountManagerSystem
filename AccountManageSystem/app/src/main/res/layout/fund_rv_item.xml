@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="5dp">
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#abC1FFC1">
+        <ImageView
+            android:id="@+id/fund_rv_iv_typeImg"
+            android:src="@mipmap/ft_cash1"
+            android:layout_width="50dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:text="现金"
+            android:id="@+id/fund_rv_tv_typeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fund_rv_iv_typeImg"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:text="0.0"
+            android:id="@+id/fund_rv_tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

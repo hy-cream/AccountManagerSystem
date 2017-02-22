@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <RelativeLayout
+        android:id="@+id/record_rl_tab"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/inrecord_btn_backgroud"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/record_rv_iv"
+            android:src="@mipmap/bt_food"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/record_rv_tv"
+        android:layout_below="@+id/record_rl_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="餐饮"
+        android:textSize="13sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+
+</RelativeLayout>

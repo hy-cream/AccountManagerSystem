@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fund_rl_group"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/fund_rl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:text="更多"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fund_rl_tab2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#7CCD7C"
+        android:layout_below="@+id/fund_rl_tab">
+        <TextView
+            android:id="@+id/fund_tv_balanceTv"
+            android:text="结余"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/fund_tv_balance"
+            android:text="0.0"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fund_tv_balanceTv"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        <Button
+            android:id="@+id/more_ib_set"
+            android:text="转账"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/fund_transfer_background"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_below="@id/fund_rl_tab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout">
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fund_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#7CCD7C"
+        app:borderWidth="0dp"
+        android:src="@mipmap/ic_add_2" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fund_rv"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
